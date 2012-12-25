@@ -1,0 +1,1 @@
+Marimball is a simple music game. Mouse over or tap a corner of the screen to move the stage in that direction. When the ball strikes keys of different lenghts different notes are played.

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<!-- info -->
+	<title>Marimball</title>
+	<link rel="icon" href="icos.ico" type="image/x-icon" />
+	
+        <!-- Processing -->
+        <script type="text/javascript" src="processing-1.4.1.min.js"></script>
+
+        <!-- AudioSprite -->
+        <script type="text/javascript" src="audiosprite-mb.js"></script>
+	      <script type="text/javascript" src="audiosprite-mbO.js"></script>
+
+</head>
+
+<body>
+
+      <audio id="mbSprite" src="/data/MarimBallSprite.mp3" preload="auto"></audio>
+      <audio id="mbSpritOe" src="/data/MarimBallSprite.ogg" preload="auto"></audio>
+      <canvas data-processing-sources="sketch_aug02a-size.pde"></canvas>  
+      <p>
+	Each column generates a color and tone when the ball collides with it.
+	Mouse over any corner of the canvas to shift the columns in that direction and change the pattern of colors and sound.
+	<br><br>
+	Pause is on the right<br>
+	Reload is on the left
+	<br><br>
+	The collision still needs some work, and sometimes the ball will get 'stuck' bouncing between two columns.
+	In this instance it is best to reload.
+      </p>
+  
+</body>
+
+</html>
