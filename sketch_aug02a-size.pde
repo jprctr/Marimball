@@ -27,7 +27,8 @@ void setup(){
 
 void draw(){
 
-  background(0,50);
+  //background(0,50);
+  background(0);
   noStroke();
   
   if ((mouseX <= width/2) && (mouseY <= height/2) && (mouseX != 0)) {
@@ -296,7 +297,8 @@ boolean isCollidingCircleRectangleTop(
     float cornerDistance_sq = pow(circleDistanceX - rectangleWidth/2, 2) +
                          pow(circleDistanceY - rectangleHeight/2, 2);
  
-    return (cornerDistance_sq <= pow(bRadius,2));
+    //return (cornerDistance_sq <= pow(bRadius,2));
+    if (cornerDistance_sq <= pow(bRadius,2)) { return true; }
 }
 
 boolean isCollidingCircleRectangleSide(
@@ -320,5 +322,5 @@ boolean isCollidingCircleRectangleSide(
     float cornerDistance_sq = pow(circleDistanceX - rectangleWidth/2, 2) +
                          pow(circleDistanceY - rectangleHeight/2, 2);
  
-    return (cornerDistance_sq <= pow(bRadius,2));
+    if (cornerDistance_sq <= pow(bRadius,2)) { return true; }
 }
